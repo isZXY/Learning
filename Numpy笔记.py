@@ -55,3 +55,20 @@ c = 10 * np.sin(b)
 # 输出一个矩阵，该矩阵输出每一个元素是否满足b<3，是True或False
 print(b < 3)
 # [ True  True  True False]
+
+
+# 逐个数字相乘和矩阵乘法
+a = np.array([[10, 20],
+              [6, 4]])
+b = np.arange(4).reshape((2, 2))
+c = a * b  # 逐个数字相乘
+print(c)
+c_dot = np.dot(a, b)  # 矩阵乘法
+print(c_dot)
+# [[ 0 20]
+#  [12 12]]
+# [[40 70]
+#  [ 8 18]]
+
+
+
