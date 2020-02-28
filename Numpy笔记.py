@@ -71,4 +71,54 @@ print(c_dot)
 #  [ 8 18]]
 
 
+# 随机生成0-1的数
+a = np.random.random((2, 4))
+print(a)
+print(np.sum(a, axis=0))  # 最小值
+# axis代表在行/列分别执行
+print(np.max(a))  # 最大值
+# [[0.35887414 0.52273135 0.90675385 0.07984126]
+#  [0.81033916 0.65081447 0.09235465 0.26689238]]
+# 3.6886012435758095
+# 0.07984126472710662
+# 0.906753848261088
+
+
+# 求平均值、中位数
+print(np.median(A))  # 中位数
+print(np.mean(A))  # 平均值
+# 7.5
+# 7.5
+
+
+# 寻找最值的索引
+A = np.arange(2, 14).reshape((3, 4))
+print(np.argmax(A))
+print(np.argmin(A))
+# 11
+# 0
+
+# 求平均值、中位数
+print(np.median(A))  # 中位数
+print(np.mean(A))  # 平均值
+# 7.5
+# 7.5
+
+
+# 累加/累差
+print(np.cumsum(A))  # 累加
+print(np.diff(A))
+# [ 2  5  9 14 20 27 35 44 54 65 77 90]
+# [[1 1 1]
+# [1 1 1]
+# [1 1 1]]
+
+
+# 排序
+np.sort(A)
+
+
+# 输出非零的行列
+np.nonzero(A)
+
 
