@@ -122,3 +122,31 @@ np.sort(A)
 np.nonzero(A)
 
 
+#矩阵转置
+np.transpose(A)
+A.T   # 功能也是
+# [[1 1 1]转置
+# [[1 1 1]
+# [[1 1 1]
+
+
+#clip功能
+A = np.arange(2, 14).reshape((3, 4))
+print(np.clip(A, 5, 9))
+# [[5 5 5 5]
+#  [6 7 8 9]
+#  [9 9 9 9]]
+# 所有低于5的值变成5，高于9的值变成9
+
+
+# 合并列矩阵
+A = np.array([1, 1, 1])
+B = np.array([2, 2, 2])
+
+print(np.vstack((A, B)))
+# [[1 1 1]
+#  [2 2 2]]
+
+# 合并行矩阵
+print(np.hstack((A, B)))
+# [1 1 1 2 2 2]
